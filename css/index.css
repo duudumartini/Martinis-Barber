@@ -120,7 +120,7 @@ header{
     border-radius: 100px;
 }
 body{
-    background-image: url("https://github.com/duudumartini/Martinis-Barber/blob/d2812d3992ee9faaa1aefc9c184e0f9baaf78642/img/background.jpg?raw=true");
+    background-image: url("https://raw.githubusercontent.com/duudumartini/Martinis-Barber/d2812d3992ee9faaa1aefc9c184e0f9baaf78642/img/background.jpg");
     background-size: cover;
     background-attachment: fixed; 
 }
