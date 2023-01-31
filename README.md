@@ -1,2 +1,3 @@
 # Martinis-Barber
-Primeiro site
+Primeiro site, desenvolvido para uma barbearia ficiticia.
+First website, developed for a fictitious barbershop.
