@@ -46,7 +46,7 @@ header{
 }
 
 .menu_home::before{
-    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/home.png);
+    content:url(https://github.com/duudumartini/Martinis-Barber/blob/main/icones/home.png);
     max-width: 24px;
     max-height: 24px;
     opacity: 0;
@@ -57,7 +57,7 @@ header{
 }
 
 .menu_contato::before{
-    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/mail.png);
+    content:url(https://github.com/duudumartini/Martinis-Barber/blob/main/icones/mail.png);
     max-width: 24px;
     max-height: 24px;
     opacity: 0;
@@ -68,7 +68,7 @@ header{
 }
 
 .menu_servicos::before{
-    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/rating.png);
+    content:url(https://github.com/duudumartini/Martinis-Barber/blob/main/icones/rating.png);
     max-width: 24px;
     max-height: 24px;
     opacity: 0;
@@ -79,7 +79,7 @@ header{
 }
 
 .menu_agendamento::before{
-    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/phone-call.png);
+    content:url(https://github.com/duudumartini/Martinis-Barber/blob/main/icones/phone-call.png);
     max-width: 24px;
     max-height: 24px;
     opacity: 0;
@@ -90,7 +90,7 @@ header{
 }
 
 .menu_localizacao::before{
-    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/placeholder.png);
+    content:url(https://github.com/duudumartini/Martinis-Barber/blob/main/icones/placeholder.png);
     max-width: 24px;
     max-height: 24px;
     opacity: 0;
