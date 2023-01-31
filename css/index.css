@@ -1,0 +1,413 @@
+header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+::selection {
+   background-color: #bf9742;
+   color: black;
+}
+
+.logo_menu{
+    width: 100px;
+    height: 100px;
+    padding-left: 100px;
+
+}
+.lista_navegacao{
+    list-style: none;
+    display:flex;
+    flex-wrap: nowrap;
+    background-color:#240000c0;
+    box-shadow: 0px 0px 20px 10px #000000;
+    max-width: 100vw;
+    max-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:100;
+}
+
+.lista_navegacao li {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lista_navegacao li a {
+    text-decoration: none;
+    color: #a8a8a8;
+    cursor: pointer;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.menu_home::before{
+    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/home.png);
+    max-width: 24px;
+    max-height: 24px;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+.menu_contato::before{
+    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/mail.png);
+    max-width: 24px;
+    max-height: 24px;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+.menu_servicos::before{
+    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/rating.png);
+    max-width: 24px;
+    max-height: 24px;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+.menu_agendamento::before{
+    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/phone-call.png);
+    max-width: 24px;
+    max-height: 24px;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+.menu_localizacao::before{
+    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/placeholder.png);
+    max-width: 24px;
+    max-height: 24px;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+.menu_home:hover::before, .menu_servicos:hover::before, .menu_agendamento:hover::before, .menu_contato:hover::before, .menu_localizacao:hover::before{
+    opacity: 1;
+    right: 1;
+}
+
+.lista_navegacao li a:hover {
+    color:#bf9742;
+    transition: 0.2s;
+    padding-left: 25px;
+    transition-timing-function: ease-in;
+    border-bottom: 5px solid #bf9742;
+    border-radius:50px;
+}
+
+.lista_navegacao li:hover{
+    transition: 0.2s;
+    background-color: #00000056;
+    border-radius: 100px;
+}
+body{
+    background-image: url("C:/Users/55479/Desktop/PROJETO/Barbearia/img/background.jpg");
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+.conteudo_principal{
+    position: relative;
+    display: flex;
+}
+
+.background_main{
+    width: 100vw;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px black;
+}
+
+.logo_main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;  
+}
+
+.sobre{
+    padding-top: 350px;
+    padding-bottom: 350px;
+    padding-right: 50px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+}
+
+.sobre h2 {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    padding-right: 210px;
+    font-size: 34px;
+}
+
+.sobre p{
+    max-width: 500px;
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    padding-bottom: 50px;
+}
+
+.lazer{
+    background-color: rgba(34, 34, 34, 0.815);
+    color:white;
+    padding-bottom: 50px;
+}
+
+.titulo_lazer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 34px;   
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.area_lazer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "imagem_balde imagem_poker imagem_sinuca"
+    "titulo_bebidas titulo_poker titulo_sinuca"
+    "texto_bebidas texto_poker texto_sinuca";
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 233px 50px 150px;
+}
+
+.imagem_balde{
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+    grid-area: imagem_balde;
+    box-shadow: 0px 0px 10px 10px rgb(14, 14, 14);  
+}
+
+.titulo_bebidas{
+    grid-area: titulo_bebidas;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.texto_bebidas{
+    grid-area: texto_bebidas;
+    text-align: center;
+    max-width: 300px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.imagem_poker{
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+    grid-area: imagem_poker;
+    box-shadow: 0px 0px 10px 10px rgb(14, 14, 14);
+}
+
+.titulo_poker{
+    grid-area: titulo_poker;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.texto_poker{
+    grid-area: texto_poker;
+    text-align: center;
+    max-width: 300px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.imagem_sinuca{
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+    grid-area: imagem_sinuca;
+    box-shadow: 0px 0px 10px 10px rgb(14, 14, 14);
+}
+
+.titulo_sinuca{
+    text-transform: uppercase;
+    font-size: 20px;
+    grid-area: titulo_sinuca;
+}
+
+.texto_sinuca{
+    text-align: center;
+    font-size: 18px;
+    grid-area: texto_sinuca;
+    max-width: 300px;
+    font-style: italic;
+}
+
+.satisfacao{
+    color: #FFFFFF;
+    padding-bottom: 50px;
+}
+
+.titulo_satisfacao{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 34px;
+}
+
+.area_satisfacao{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "titulo_garantia titulo_pacote"
+    "texto_garantia texto_pacote"
+    "titulo_presente titulo_presente"
+    "texto_presente texto_presente";
+    justify-items: center;
+    align-items: center;
+}
+
+.titulo_garantia{
+    grid-area: titulo_garantia;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 50px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.texto_garantia{
+    grid-area: texto_garantia;
+    text-align: center;
+    max-width: 600px;
+    font-style: italic;
+}
+
+.titulo_pacote{
+    grid-area: titulo_pacote;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 50px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.texto_pacote{
+    grid-area: texto_pacote;
+    text-align: center;
+    max-width: 600px;
+    font-style: italic;
+}
+
+.titulo_presente{
+    grid-area: titulo_presente;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 50px;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.texto_presente{
+    grid-area: texto_presente;
+    text-align: center;
+    max-width: 600px;
+    font-style: italic;
+}
+
+footer{
+    color: #FFFFFF;
+    background-color: #240000;
+}
+
+.rodape{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "titulo_rodape logo titulo_app"
+    "texto_rodape logo imagem_google"
+    "texto_rodape direitos imagem_apple";
+    justify-items: center;
+    align-items: center;
+}
+
+.titulo_rodape{
+    grid-area: titulo_rodape;
+    text-transform: uppercase;
+    font-size: 20px;
+    
+}
+
+.texto_rodape{
+    grid-area: texto_rodape;
+    text-align:left;
+    max-width: 300px;
+    font-style: italic;
+    
+}
+
+.titulo_app{
+    font-size: 20px;
+    grid-area: titulo_app;
+    text-transform: uppercase;
+    
+}
+
+.imagem_google{
+    grid-area: imagem_google;
+    
+}
+
+.imagem_apple{
+    grid-area: imagem_apple;
+}
+
+.logo_rodape{
+    width: 80px;
+    height: 80px;
+    padding-top: 50px;
+    grid-area: logo;
+}
+
+.direitos{
+    grid-area: direitos;
+}

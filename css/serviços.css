@@ -1,0 +1,388 @@
+header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+::selection {
+   background-color: #bf9742;
+   color: black;
+}
+
+.logo_menu{
+    width: 100px;
+    height: 100px;
+    padding-left: 100px;
+}
+
+.lista_navegacao{
+    list-style: none;
+    display:flex;
+    flex-wrap: nowrap;
+    background-color:#240000c0;
+    box-shadow: 0px 0px 20px 10px #000000;
+    max-width: 100vw;
+    max-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:100;
+}
+
+.lista_navegacao li {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lista_navegacao li a {
+    text-decoration: none;
+    color: #a8a8a8;
+    cursor: pointer;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.menu_home::before{
+    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/home.png);
+    max-width: 24px;
+    max-height: 24px;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+.menu_contato::before{
+    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/mail.png);
+    max-width: 24px;
+    max-height: 24px;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+.menu_servicos::before{
+    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/rating.png);
+    max-width: 24px;
+    max-height: 24px;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+.menu_agendamento::before{
+    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/phone-call.png);
+    max-width: 24px;
+    max-height: 24px;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+.menu_localizacao::before{
+    content:url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/placeholder.png);
+    max-width: 24px;
+    max-height: 24px;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+.menu_home:hover::before, .menu_servicos:hover::before, .menu_agendamento:hover::before, .menu_contato:hover::before, .menu_localizacao:hover::before{
+    opacity: 1;
+    right: 1;
+}
+
+.lista_navegacao li a:hover {
+    color:#bf9742;
+    transition: 0.2s;
+    padding-left: 25px;
+    transition-timing-function: ease-in;
+    border-bottom: 5px solid #bf9742;
+    border-radius:50px;
+}
+
+.lista_navegacao li:hover{
+    transition: 0.2s;
+    background-color: #00000056;
+    border-radius: 100px;
+}
+
+body{
+    background-image: url("C:/Users/55479/Desktop/PROJETO/Barbearia/img/background_servicos.jpg");
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+.grid_compensadora{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-rows: 250px;
+}
+
+.servicos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "imagem_cabelobarba imagem_bebidas imagem_jogos imagem_noivo ";
+    justify-items: center;
+    align-items: start;
+    grid-template-rows: 50vh;
+}
+
+.classicos_flex, .bebidas_flex, .jogos_flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem_cabelobarba{
+    grid-area: imagem_cabelobarba;
+    width: 100px;
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 0px 0px 10px 10px rgb(0, 0, 0);
+    margin-left: 33%;
+}
+
+.imagem_cabelobarba_botao::after{
+    content:"CLÁSSICOS";
+    display: block;
+    margin-top: 20px;
+    padding: 10px 110px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    border: 2px solid #bf9742;
+    border-radius: 10px;
+}
+
+.imagem_bebidas{
+    grid-area: imagem_bebidas;
+    width: 100px;
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 0px 0px 10px 10px rgb(0, 0, 0);
+    margin-left: 33%;
+}
+
+.imagem_bebidas_botao::after{
+    content:"BEBIDAS";
+    display: block;
+    margin-top: 20px;
+    padding: 10px 110px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    border: 2px solid #bf9742;
+    border-radius: 10px;
+}
+
+.imagem_jogos{
+    grid-area: imagem_jogos;
+    width: 100px;
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 0px 0px 10px 10px rgb(14, 14, 14);
+    margin-left: 33%;
+}
+
+.imagem_jogos_botao::after{
+    content:"JOGOS";
+    display: block;
+    margin-top: 20px;
+    padding: 10px 110px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    border: 2px solid #bf9742;
+    border-radius: 10px;
+}
+
+.imagem_noivo{
+    grid-area: imagem_noivo;
+    width: 100px;
+    border-radius: 50%;
+    height: auto;
+    box-shadow: 0px 0px 10px 10px rgb(14, 14, 14);
+    margin-left: 35%;
+}
+
+.imagem_noivo_botao::after{
+    content:"DIA DO NOIVO";
+    display: block;
+    margin-top: 20px;
+    padding: 10px 110px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    border: 2px solid #bf9742;
+    border-radius: 10px;
+}
+
+.dropdown_servicos_gerais{
+    display: none;
+    color:#bf9742;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 25px;
+}
+
+.imagem_cabelobarba_botao:hover ~ .dropdown_servicos_gerais{
+    display: block;
+}
+
+
+.dropdown_bebidas{
+    display: none;
+    color:#bf9742;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 25px;
+}
+
+.imagem_bebidas_botao:hover ~ .dropdown_bebidas{
+    display: block;
+}
+
+.dropdown_jogos{
+    display: none;
+    color:#bf9742;
+    min-width: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 25px;
+}
+
+.imagem_jogos_botao:hover ~ .dropdown_jogos{
+    display: block;
+}
+
+.dropdown_noivo{
+    display: none;
+    color:#bf9742;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 25px;
+}
+
+.imagem_noivo_botao:hover ~ .dropdown_noivo{
+    display: block;
+}
+
+.lista_classicos, .lista_bebidas, .lista_jogos, .lista_noivo{
+    font-size: 24px;   
+    
+}
+
+.lista_classicos{
+    list-style-image: url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/classicos.png);
+    border: 2px dashed #bf9742;
+    padding: 2px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+}
+
+.lista_bebidas{
+    list-style-image: url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/bebidas.png);
+    border: 2px dashed #bf9742;
+    padding: 2px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+}
+
+.lista_jogos{
+    list-style-image: url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/jogos.png);
+    border: 2px dashed #bf9742;
+    padding: 2px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+}
+
+.lista_noivo{
+    list-style-image: url(C:/Users/55479/Desktop/PROJETO/Barbearia/icones/noivo.png);
+    border: 2px dashed #bf9742;
+    padding: 2px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+}
+
+footer{
+    color: #FFFFFF;
+    background-color: #240000;
+}
+
+.rodape{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "titulo_rodape logo titulo_app"
+    "texto_rodape logo imagem_google"
+    "texto_rodape direitos imagem_apple";
+    justify-items: center;
+    align-items: center;
+}
+
+.titulo_rodape{
+    grid-area: titulo_rodape;
+    text-transform: uppercase;
+    font-size: 20px;
+    
+}
+
+.texto_rodape{
+    grid-area: texto_rodape;
+    text-align:left;
+    max-width: 300px;
+    font-style: italic;
+    
+}
+
+.titulo_app{
+    font-size: 20px;
+    grid-area: titulo_app;
+    text-transform: uppercase;
+    
+}
+
+.imagem_google{
+    grid-area: imagem_google;
+    
+}
+
+.imagem_apple{
+    grid-area: imagem_apple;
+}
+
+.logo_rodape{
+    width: 80px;
+    height: 80px;
+    padding-top: 50px;
+    grid-area: logo;
+}
+
+.direitos{
+    grid-area: direitos;
+}
+
