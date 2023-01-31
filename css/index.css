@@ -46,7 +46,7 @@ header{
 }
 
 .menu_home::before{
-    content:url(https://github.com/duudumartini/Martinis-Barber/blob/main/icones/home.png);
+    content:url(https://raw.githubusercontent.com/duudumartini/Martinis-Barber/d2812d3992ee9faaa1aefc9c184e0f9baaf78642/icones/home.png);
     max-width: 24px;
     max-height: 24px;
     opacity: 0;
